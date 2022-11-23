@@ -87,6 +87,8 @@ h5{
 }
 
 .text_2{
+    transition: 0.3s ease;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -94,8 +96,17 @@ h5{
     line-height: 16px;
     letter-spacing: 0.02em;
     
-    color:#212121;    
+    color:#212121; 
+    text-decoration: none;
+    border-top: 4px solid #3fa46b00;
+    border-bottom: 4px solid #3fa46b00;
 }
+
+.text_2:hover{
+    border-bottom: 4px solid #46a8f8;
+    padding: 0px 0; 
+}
+
 .text_3{
     font-family: 'Roboto';
     font-style: normal;
