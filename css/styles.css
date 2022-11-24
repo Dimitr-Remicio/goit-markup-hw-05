@@ -3,6 +3,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     list-style-type: none;
+
 }
 
 .section{
@@ -14,17 +15,58 @@
     display: content;
     position: absolute;
     backdrop-filter: brightness(0.5);
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 3;
 
+    animation: modal 1s 2ms;
+    animation-fill-mode: forwards;
+    visibility: is-hidden;
+    opacity: 0;
 }
 
+#cerrar{
+    display: none;
+
+}
+#cerrar + label{
+    background-color: #0c0c0c;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 50px;
+    z-index: 50;
+    margin: auto;
+    height: 40px;
+    width: 30px;
+    line-height: 30px;
+    right: 610px;
+    top: 270px;
+    cursor: pointer;
+
+    animation: modal 1s 1ms;
+    animation-fill-mode: forwards;
+    visibility:is-hidden;
+    opacity: 0;
+    
+
+}
+#cerrar:checked + label; #cerrar:checked ~ .modal{
+    display: none;
+}
+
+
+@keyframes modal{
+    100%{ 
+        visibility: visible;
+        opacity: 1;
+    }
+}
+ 
 .modal{
     position: relative;
     display: flex;
 
-    margin: 0 auto;
+    margin: auto;
     top: 30%;
 
 
