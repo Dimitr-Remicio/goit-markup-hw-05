@@ -13,13 +13,18 @@
     <title>goit-markup-hw-04</title>
 </head>
 <body>
+    <div class="backdrop">
+        <div class="modal"></div>
+    </div>
+
+
     <header>
         <div class="header_menu">
             <div class="container">
-                        <nav>
+                        <nav class="navbar">
                             <a class="text_1" href="#">WebStudio</a>
-                            <a class="text_2" href="index.html">Estudio</a>
-                            <a class="text_2" href="portfolio.html">Portafolio</a>
+                            <a class="text_2 link__opened" href="index.html">Estudio</a>
+                            <a class="text_2 " href="portfolio.html">Portafolio</a>
                             <a class="text_2" href="#">Contactos</a>
                         </nav>
                             <ul>
@@ -40,6 +45,7 @@
     </header>
 
     <main>
+
         <section class="section">
             <div class="section_title">
                 <div class="container">
@@ -276,6 +282,8 @@
             </a>
         </div>
     </footer>
-    
+
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
