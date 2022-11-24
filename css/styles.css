@@ -12,8 +12,8 @@
 }
 
 .backdrop{
-    display: content;
     position: absolute;
+    display: flex;
     backdrop-filter: brightness(0.5);
     height: 100vh;
     width: 100%;
@@ -21,37 +21,37 @@
 
     animation: modal 1s 2ms;
     animation-fill-mode: forwards;
-    visibility: is-hidden;
-    opacity: 0;
+    visibility: hidden;
+    opacity: 0;    
+
 }
+
 
 #cerrar{
     display: none;
 
 }
 #cerrar + label{
-    background-color: #0c0c0c;
     position: absolute;
-    color: #FFFFFF;
-    font-size: 50px;
+    color: #0c0c0c;
+    font-size: 30px;
     z-index: 50;
     margin: auto;
     height: 40px;
     width: 30px;
     line-height: 30px;
     right: 610px;
-    top: 270px;
+    top: 250px;
     cursor: pointer;
 
-    animation: modal 1s 1ms;
-    animation-fill-mode: forwards;
-    visibility:is-hidden;
+    animation: modal 1s 1ms  forwards;
+    visibility:hidden;
     opacity: 0;
-    
-
+    overflow-y: hidden;
 }
-#cerrar:checked + label; #cerrar:checked ~ .modal{
+#cerrar:checked + label, #cerrar:checked ~ .backdrop{
     display: none;
+    transition: 150ms ease;
 }
 
 
@@ -67,11 +67,10 @@
     display: flex;
 
     margin: auto;
-    top: 30%;
 
 
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 50%;
     background-color: #FFFFFF;
 
 }
@@ -150,13 +149,16 @@ h5{
     line-height: 31px;
     top: 0;
     text-align: right;
+    border-bottom: rgba(0, 0, 0, 0) solid  20px;
     letter-spacing: 0.03em;
     
     color: #2196F3;
 }
 
 .text_2 {
-
+    position: relative;
+    bottom: 0;
+    top: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -208,7 +210,9 @@ h5{
     color: #2196F3;
     border-bottom: #2196F3 solid 3px;
     padding: 20px 0;
-    transition: 200ms ease;
+    transition: 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header_menu nav{
@@ -266,7 +270,7 @@ h5{
     margin:  auto;
     align-items: center;
     text-align: center;
-    
+    z-index: 1;
 }
 .section_title{
     justify-content: center;
@@ -335,9 +339,11 @@ h5{
     margin-top: 110px;
 }
 .fr_button:hover{
+
     background-color: #F5F4FA;
     color: #212121;
-    transition:  all 300ms ease;
+    transition:  all 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section_descripts{
@@ -517,8 +523,8 @@ td {
 }
 .tarjet:hover{
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-
-    transition: all 200ms ease-in-out;   
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 250ms;   
 }
 
 .social-icons{
@@ -538,15 +544,16 @@ td {
 
 .social-icon-:hover {
     fill: #46a8f8;
-    transition: all ease-in-out 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all ease 250ms;
 }
 .icon-:hover {
-    fill: #46a8f8;
-    transition: all ease-in-out 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all ease 250ms;
 }
 .social-icon-:hover .coloricon {
-    fill: #FFFFFF;    
-    transition: all ease-in-out 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all ease 250ms;
 }
 /*iconss*/
 .icon_circle{
@@ -567,6 +574,8 @@ td {
     border: 0px;   
 }
 .filters button{
+    position: relative;
+    background-color: #d8d8d8;
     left: 0%;
     border: 0px;
     width: 100px;
@@ -578,13 +587,12 @@ td {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    transition: 400ms ease;
-
+    z-index: 50;
 }
 .filters button:hover{
     background-color: #46a8f8;
     color: #FFFFFF;
-    transition: 400ms ease;
+    transition: 400ms;
 
 }
 
@@ -621,11 +629,14 @@ h3{
 
 .section_project .proj:hover{
     box-shadow: 1px 5px 5px  rgb(87, 87, 87, 0.2);
-    transition: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all ease 250ms;
 }
 .proj:hover .overlay {
     transform: translatex(0);
     visibility: visible;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all ease 250ms;
 }
   
 .overlay {
@@ -707,13 +718,15 @@ h3{
 .regular_clients div:hover{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
     border: 1px solid #2196F3;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all ease 250ms;
 
 }
 .regular_clients svg:hover{
     
     fill:#2196F3;
-    transition: all ease-in 300ms;
-    transition: all ease-out 300ms; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all ease 250ms;
 }
 
 .div_icon2{
