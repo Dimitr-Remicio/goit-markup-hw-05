@@ -548,10 +548,15 @@ td {
     transition: all ease 250ms;
 }
 .icon-:hover {
+
+    fill: #46a8f8;
+
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: all ease 250ms;
 }
 .social-icon-:hover .coloricon {
+    fill: #ffffff;
+
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: all ease 250ms;
 }
@@ -823,8 +828,10 @@ h3{
 }
 
 .social-icons-{
+    position: relative;
     display: flex;
     margin-left: 550px;
+    z-index: 30;
 }
   
   .social-icon {
@@ -833,4 +840,6 @@ h3{
     justify-content: center;
     position: relative;
     width: 60px;
+    z-index: 30;
+
 }
