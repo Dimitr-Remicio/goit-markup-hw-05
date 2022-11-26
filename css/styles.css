@@ -12,7 +12,7 @@
 }
 
 .backdrop{
-    position: absolute;
+    position: fixed;
     display: flex;
     backdrop-filter: brightness(0.5);
     height: 100vh;
@@ -32,7 +32,7 @@
 
 }
 #cerrar + label{
-    position: absolute;
+    position: fixed;
     color: #0c0c0c;
     font-size: 30px;
     z-index: 50;
@@ -40,8 +40,7 @@
     height: 40px;
     width: 30px;
     line-height: 30px;
-    right: 610px;
-    top: 250px;
+    right: 0px;
     cursor: pointer;
 
     animation: modal 1s 1ms  forwards;
@@ -63,8 +62,11 @@
 }
  
 .modal{
-    position: relative;
+    position: fixed;
+
     display: flex;
+    top: 25%;
+    left: 33%;
 
     margin: auto;
 
