@@ -10,17 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/log.png" type="image/icon type">
-    <title><goit-markup-hw-05></goit-markup-hw-05></title>
+    <title>goit-markup-hw-05</title>
 </head>
 <body>
-    <input type="checkbox" id="cerrar">
-    <label for="cerrar" id="btn-cerrar">x</label>
-    <div class="backdrop">
-        <div class="modal">
-        </div>
-    </div>
-
-
     <header>
         <div class="header_menu">
             <div class="container">
@@ -31,32 +23,61 @@
                             <a class="text_2" href="#">Contactos</a>
                         </nav>
                             <ul>
-                                <li><div class="head_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none">
-                                    <path fill="#2196F3" d="M14.5 0h-13C.673 0 0 .673 0 1.5v9c0 .827.673 1.5 1.5 1.5h13c.827 
-                                    0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5Zm0 1c.068 0 .133.014.192.039L8 6.839l-6.692-5.8A.498.498
-                                     0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.095l6.672 5.783a.5.5 0 0 0 .656 0L15 2.095V10.5a.5.5 0 0 1-.5.5Z"/></svg>
-                                    </div>
-                                    <a href="#" class="text_3">info@devstudio.com</a>
-                                </li> 
-                                <li><div class="head_icon"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="none"><path fill="#757575" d="M8.5 0h-7C.673 0 0 .673 0 1.5v13c0 .827.673 1.5 1.5 1.5h7c.827 0 1.5-.673 1.5-1.5v-13C10 .673 9.327 0 8.5 0Zm-7 1h7a.5.5 0 0 1 .5.5V12H1V1.5a.5.5 0 0 1 .5-.5Zm7 14h-7a.5.5 0 0 1-.5-.5V13h8v1.5a.5.5 0 0 1-.5.5Z"/><path fill="#757575" d="M2.354 13.739a.445.445 0 0 1 0 .66.525.525 0 0 1-.708 0 .445.445 0 0 1 0-.66.525.525 0 0 1 .708 0Z"/></svg></div>
-                                    <a href="#" class="text_4">+52 55 5529 6000</a>
+                                <li><div class="head_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none" class="icon_hdr" ><path fill="" d="M14.5 0h-13C.673 0 0 .673 0 1.5v9c0 .827.673 1.5 1.5 1.5h13c.827 0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5Zm0 1c.068 0 .133.014.192.039L8 6.839l-6.692-5.8A.498.4980 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.095l6.672 5.783a.5.5 0 0 0 .656 0L15 2.095V10.5a.5.5 0 0 1-.5.5Z"/></svg></div>
+                                    <a href="#" class="text_3">info@devstudio.com</a></li> 
+                                <li><div class="head_icon"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="none"  ><path fill="" class="icon_hdr" d="M8.5 0h-7C.673 0 0 .673 0 1.5v13c0 .827.673 1.5 1.5 1.5h7c.827 0 1.5-.673 1.5-1.5v-13C10 .673 9.327 0 8.5 0Zm-7 1h7a.5.5 0 0 1 .5.5V12H1V1.5a.5.5 0 0 1 .5-.5Zm7 14h-7a.5.5 0 0 1-.5-.5V13h8v1.5a.5.5 0 0 1-.5.5Z"/><path fill="" d="M2.354 13.739a.445.445 0 0 1 0 .66.525.525 0 0 1-.708 0 .445.445 0 0 1 0-.66.525.525 0 0 1 .708 0Z"/></svg></div>
+                                    <a href="#" class="text_3">+52 55 5529 6000</a>
                                 </li>      
                             </ul>
                             <svg class="icon" ><use href="/images/sobre.svg"></use></svg>
             </div>  
         </div>
     </header>
-
+    <input type="checkbox" id="cerrar">
+    <div class="backdrop">
+        <div class="data-modal">
+            <label for="cerrar" id="btn-cerrar"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="btn_" fill="none"><circle cx="15" cy="15" r="15" fill="#fff" stroke-opacity="1"/><circle cx="15" cy="15" r="14.5" stroke="#000" stroke-opacity=".1"/><path class="color_x" fill="" d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z"/></svg></label>
+            <h6>Deje sus datos, nos contactaremos con usted</h6>
+            <form>
+                <label>
+                  Nombre
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="icon_frm1 icon_frm" fill="none"><path fill="" d="M6 6a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.002 0-6 1.005-6 3v.75c0 .412.338.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z"/></svg>
+                  <input type="text" name="username" placeholder=""/>
+                </label>
+                <label>
+                  telefono
+                  <input type="tel" name="telefono" placeholder=""/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="icon_frm2 icon_frm" fill="none"><path fill="" d="m11.996 9.123-1.838-.21a1.44 1.44 0 0 0-1.187.412l-1.332 1.332a10.888 10.888 0 0 1-4.769-4.77L4.21 4.55a1.44 1.44 0 0 0 .412-1.187l-.21-1.824a1.448 1.448 0 0 0-1.44-1.28H1.72C.902.258.222.938.272 1.756c.384 6.18 5.327 11.115 11.5 11.499.817.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.432Z"/></svg>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder=""/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" class="icon_frm3 icon_frm" fill="none"><path fill="" d="M14 0H2C1.175 0 .507.675.507 1.5l-.007 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9C15.5.675 14.825 0 14 0Zm-.3 3.188L8.398 6.502a.759.759 0 0 1-.795 0L2.3 3.187a.637.637 0 1 1 .675-1.08L8 5.25l5.025-3.143a.637.637 0 1 1 .675 1.08Z"/></svg>
+                </label>
+                <label>
+                    Comentarios
+                    <textarea name="feedback" rows="5" placeholder="Introduzca el texto"></textarea>
+                </label>
+                <label class="terms">
+                    <input id="form" type="checkbox"  name="terms" value="information" />
+                    Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+                </label>
+                <button type="submit">enviar</button>
+              </form>
+        </div>
+    </div>
     <main>
 
         <section class="section">
             <div class="section_title">
+            <div class="fx">
                 <div class="container">
                     <h1>SOLUCIONES EFICACES PARA<br>SU NEGOCIO</h1>
                     <div class="button">
                         <button type="button" class="fr_button">solicite nuestro servicio</button>    
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -284,6 +305,17 @@
                 <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none"><path class="icon-" fill="#525252" d="M44 22a21.931 21.931 0 0 1-6.444 15.556A21.931 21.931 0 0 1 22 44a21.931 21.931 0 0 1-15.556-6.444A21.931 21.931 0 0 1 0 22 21.931 21.931 0 0 1 6.444 6.444 21.931 21.931 0 0 1 22 0a21.931 21.931 0 0 1 15.556 6.444A21.931 21.931 0 0 1 44 22Z"/><g fill="#FFF" clip-path="url(#a)"><path d="M31.995 32H32v-7.336c0-3.588-.772-6.352-4.967-6.352-2.017 0-3.37 1.106-3.923 2.155h-.058v-1.82h-3.978v13.352h4.142v-6.611c0-1.741.33-3.425 2.486-3.425 2.124 0 2.156 1.987 2.156 3.536V32h4.137ZM12.33 18.648h4.147V32H12.33V18.648ZM14.402 12A2.402 2.402 0 0 0 12 14.402c0 1.325 1.076 2.424 2.402 2.424 1.325 0 2.401-1.099 2.401-2.424A2.403 2.403 0 0 0 14.402 12Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M12 12h20v20H12z"/></clipPath></defs></svg>
             </a>
         </div>
+        
+        <div class="form_foot">
+            <form>
+                <label>
+                    Suscríbase al Boletin Informativo
+                    <input type="email" name="email" placeholder="Correo Electronico"/>
+                </label>
+                <button type="submit">Suscribase <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" class="send_ico"><path fill="" class="color_icon2" d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z"/></svg></button>
+            </form>
+        </div>
+
     </footer>
 
 
